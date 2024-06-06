@@ -22,7 +22,7 @@ function App() {
                     <h1>Login</h1>
                     <form onSubmit={handleLogin}>
                         <div>
-                            <label htmlFor="username">Username: </label>
+                            <label htmlFor="username">Usuario: </label>
                             <input
                                 type="text"
                                 id="username"
@@ -32,7 +32,7 @@ function App() {
                             />
                         </div>
                         <div>
-                            <label htmlFor="password">Password: </label>
+                            <label htmlFor="password">Contraseña: </label>
                             <input
                                 type="password"
                                 id="password"
@@ -46,7 +46,7 @@ function App() {
                 </div>
             ) : (
                 <div>
-                    <h1>Welcome, {username}!</h1>
+                    <h1>Bienvenido, {username}!</h1>
                 </div>
             )}
         </>
