@@ -46,7 +46,7 @@ function App() {
                 </div>
             ) : (
                 <div>
-                    <h1>Bienvenido, {username}!</h1>
+                    <h1>Prueba Branch Javier, {username}!</h1>
                 </div>
             )}
         </>
