@@ -19,6 +19,7 @@ function App() {
         <>
             {!isLoggedIn ? (
                 <div className="login-container">
+                    <img src="src/assets/GasLogo.png" alt="Login Image" />
                     <h1>Login</h1>
                     <form onSubmit={handleLogin}>
                         <div>
@@ -47,7 +48,7 @@ function App() {
                 </div>
             ) : (
                 <div>
-                    <h1>Bienvenido, {username}!</h1>
+                    <h1>Prueba Branch Javier, {username}!</h1>
                 </div>
             )}
         </>
