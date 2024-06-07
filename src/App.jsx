@@ -48,6 +48,7 @@ function App() {
                             />
                         </div>
                         <button type="submit">Login</button>
+
                     </form>
                     <button onClick={handleRegister}>Registrarse</button>
                 </div>
