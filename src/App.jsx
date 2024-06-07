@@ -15,6 +15,11 @@ function App() {
         }
     };
 
+    const handleRegister = () => {
+        // Lógica para el registro de usuario
+        alert('Redirigiendo al formulario de registro...');
+    };
+
     return (
         <>
             {!isLoggedIn ? (
@@ -44,6 +49,7 @@ function App() {
                         </div>
                         <button type="submit">Login</button>
                     </form>
+                    <button onClick={handleRegister}>Registrarse</button>
                 </div>
             ) : (
                 <div>
