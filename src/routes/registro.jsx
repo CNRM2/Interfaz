@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './App.css';
+import { Form } from "react-router-dom";
+import './registro.css';
 
-function App() {
+function Registro() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,9 +24,9 @@ function App() {
     return (
         <>
             {!isLoggedIn ? (
-                <div className="login-container">
+                <div id='registro' className="login-container">
                     <img src="src/assets/GasLogo.png" alt="Login Image" />
-                    <h1>Login</h1>
+                    <h1>Register</h1>
                     <form onSubmit={handleLogin}>
                         <div>
                             <label htmlFor="username">User: </label>
@@ -50,7 +51,9 @@ function App() {
                         <button type="submit">Login</button>
 
                     </form>
-                    <button onClick={handleRegister}>Registrarse</button>
+                    <nav>
+                      <button onClick={handleRegister}>Registrarse</button>
+                    </nav>
                 </div>
             ) : (
                 <div>
@@ -61,4 +64,4 @@ function App() {
     );
 }
 
-export default App;
+export default Registro;
